@@ -12,7 +12,7 @@ import { envVars } from './configs';
 async function startServer() {
     const db = new Db('sqlite3');
 
-    await db.connect(() => {
+    await db.connect(async () => {
         const httpServer = https.createServer(
             {
                 key: fs.readFileSync(path.join(__dirname, '..', 'configs', 'key.pem')),
