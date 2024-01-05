@@ -1,2 +1,2 @@
 export { HttpException } from './http-exception/index.service';
-export { response, ResponseType } from './response/index.service';
+export { ApiResponse, ErrorType, SuccessType } from './api-response/index.service';
