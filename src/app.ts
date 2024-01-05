@@ -6,8 +6,8 @@ import express from 'express';
 import rateLimit from 'express-rate-limit';
 
 import { envVars } from './configs';
-import { apiRouterV1 } from './routes';
 import { HttpException } from './services';
+import { apiRouterV1, apiRouterV1Path } from './routes';
 import { serveClient, errorHandler } from './middlewares';
 
 const app = express();
@@ -24,7 +24,7 @@ app.use(
 );
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
-app.use('/api/v1', apiRouterV1);
+app.use(apiRouterV1Path, apiRouterV1);
 app.use('/*', serveClient);
 app.use(errorHandler);
 

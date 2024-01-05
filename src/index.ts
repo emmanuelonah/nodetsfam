@@ -6,7 +6,7 @@ import https from 'https';
 
 import app from './app';
 
-import { Db } from './db/index.db';
+import { Db, seed } from './db';
 import { envVars } from './configs';
 
 async function startServer() {
@@ -56,6 +56,11 @@ async function startServer() {
             );
             console.log(`${envVars.serverUrl}`.white.underline);
         });
+
+        /**
+         * Run seed script
+         */
+        seed();
     });
 }
 

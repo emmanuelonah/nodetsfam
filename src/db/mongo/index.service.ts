@@ -5,7 +5,7 @@ import { envVars } from '../../configs';
 
 function initializeMongoDb() {
     mongoose.connection.on('open', () => {
-        console.info(`🔑🔑🔑 Db connected on: ${envVars.serverDbUri}`.green.underline);
+        console.info(`🔑🔑🔑 Db connected on: ${envVars.mongoDbUri}`.green.underline);
     });
 
     mongoose.connection.on('error', (error) => {
@@ -19,7 +19,7 @@ function initializeMongoDb() {
 
 async function connectMongoDb(onSuccess?: () => void) {
     try {
-        await mongoose.connect(envVars.serverDbUri);
+        await mongoose.connect(envVars.mongoDbUri!);
         onSuccess?.();
     } catch (error) {
         console.error(error);

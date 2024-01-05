@@ -1,1 +1,1 @@
-export {};
+export function seed() {}

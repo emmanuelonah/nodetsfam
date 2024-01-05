@@ -59,6 +59,14 @@ yarn run dev
 
 Open [http://localhost:8080](http://localhost:8080) with your browser to see the result.
 
+### If the server startup was successful, you should see the below view
+
+<img src="./public/home.png" alt="Success view" />
+
+### If you try accessing an un-existing route, you will see an API response like below
+
+<img src="./public/error.png" alt="Error route" />
+
 ## Production build
 
 ```bash
@@ -87,6 +95,27 @@ yarn run lint
 
 ```bash
 yarn run format
+```
+
+# Env variable sample you could just use
+
+create a file in the root folder called `.env` and paste the below data
+
+```bash
+NODETSFAM_APP_NAME="NodeTsFam"
+NODETSFAM_SERVER_PORT=8080
+NODETSFAM_SERVER_URL="https://localhost:8080"
+```
+
+<p style="color:red;">The below `env vars` are optional</p>
+
+```bash
+NODETSFAM_MONGO_DB_URI="If you chose to opt-in for mongo db,then paste in your db_uri"
+
+NODETSFAM_CLIENT_URL="if a website will be using your server, then paste in the URL e.g: <http://localhost:4000>"
+
+NODETSFAM_CLIENT_PORT="if a website will be using your server, then paste in the PORT e.g: 4000"
+
 ```
 
 # Packages Used
