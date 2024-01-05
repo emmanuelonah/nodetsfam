@@ -32,6 +32,10 @@ Whether you're a seasoned Node.js developer or just getting started, "NodeTsFem"
 3. [Git Hooks Husky](https://typicode.github.io/husky/)
 4. [Git Action](https://docs.github.com/en/actions)
 
+# Database used
+
+_Out of the box, we support MongoDB(using [Moongose](https://mongoosejs.com/) as the ODM) and SQLite3(using [Sequelize](https://sequelize.org/) as the ORM)_. But you can plugin your own db [here](./src/db/)
+
 # Architecture used(`MVC`)
 
 [This project uses the MVC software design pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
@@ -118,8 +122,6 @@ NODETSFAM_CLIENT_PORT="if a website will be using your server, then paste in the
 
 ```
 
-# Packages Used
+# Real life usage of this project
 
-## Prod Dependencies
-
-## Dev Dependencies
+[Youtube Video coming soon]()
