@@ -8,7 +8,7 @@
 
 # Description 📦
 
-<p style="font-size:11px;">NodeTsFam is an acronym for <span style="color:green">NodeJs Typescript and Framework</span></p>
+<p style="font-size:11px;">NodeTsFam is an acronym for <span style="color:green">NodeJs Typescript Framework</span></p>
 
 The "NodeTsFem" project provides a custom setup for Node.js development, designed to make it easy for developers to bootstrap a new project. It uses TypeScript for static typing and includes pre-configured tools and scripts for building, testing, and running the application.
 
