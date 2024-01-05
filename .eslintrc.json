@@ -1,0 +1,52 @@
+{
+    "env": {
+        "node": true,
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "overrides": [],
+    "extends": ["prettier", "eslint:recommended", "plugin:@typescript-eslint/recommended"],
+    "plugins": ["jest", "@typescript-eslint"],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-empty": "error",
+        "no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "all",
+                "ignoreRestSiblings": false,
+                "argsIgnorePattern": "^_",
+                "varsIgnorePattern": "^_"
+            }
+        ],
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "argsIgnorePattern": "^_",
+                "varsIgnorePattern": "^_",
+                "caughtErrorsIgnorePattern": "^_"
+            }
+        ],
+        "semi": "error",
+        "comma-dangle": "off",
+        "dot-notation": "off",
+        "indent": ["error", 4],
+        "no-useless-escape": "off",
+        "import/extensions": "off",
+        "operator-linebreak": "off",
+        "no-underscore-dangle": "off",
+        "@typescript-eslint/ban-types": "off",
+        "import/prefer-default-export": "off",
+        "import/no-extraneous-dependencies": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/interface-name-prefix": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off"
+    }
+}
