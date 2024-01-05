@@ -1,6 +1,6 @@
 import { envVars } from './index.config';
 
-describe.skip('envVars', () => {
+describe('envVars', () => {
     it('should return configuration object', () => {
         expect(typeof envVars.appName).toBe('string');
         expect(typeof envVars.serverDbUri).toBe('string');
