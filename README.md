@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/emmanuelonah/nodetsfam">
-    <img src="./public//logo512.png" alt="NodeTsFam logo" width="300" />
+    <img src="./public/logo.png" alt="NodeTsFam logo" width="300" />
   </a>
 </div>
 
