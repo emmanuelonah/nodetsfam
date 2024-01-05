@@ -13,14 +13,14 @@ function initializeMongoDb() {
     });
 
     mongoose.connection.on('disconnected', () => {
-        console.info(`🔐🔐🔐 Db disconnected`);
+        console.info('🔐🔐🔐 Db disconnected');
     });
 }
 
-async function connectMongoDb(onSuccess: () => void) {
+async function connectMongoDb(onSuccess?: () => void) {
     try {
         await mongoose.connect(envVars.serverDbUri);
-        onSuccess();
+        onSuccess?.();
     } catch (error) {
         console.error(error);
     }

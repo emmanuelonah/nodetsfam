@@ -6,10 +6,12 @@ import https from 'https';
 
 import app from './app';
 
-import { db } from './db/index.db';
+import { Db } from './db/index.db';
 import { envVars } from './configs';
 
 async function startServer() {
+    const db = new Db('sqlite3');
+
     await db.connect(() => {
         const httpServer = https.createServer(
             {
